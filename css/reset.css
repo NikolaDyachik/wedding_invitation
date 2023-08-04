@@ -1,0 +1,81 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+body {
+  line-height: 1;
+}
+html {
+  /* 62.5% of 16px browser font size is 10px */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+[class*="__container"] {
+  width: 100%;
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 0rem 3.2rem;
+}
+@media (min-width: 767.98px) {
+  [class*="__container"] {
+    max-width: 144rem;
+    max-height: 100%;
+    padding: 0rem 10rem;
+  }
+}
+
+.wrapper {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
