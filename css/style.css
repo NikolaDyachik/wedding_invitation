@@ -755,6 +755,12 @@ body {
   .wedding-story__single-photos {
     align-self: center;
   }
+  .wedding-form__text {
+    font-size: 2rem;
+    letter-spacing: 0.144rem;
+    line-height: 1.5;
+    margin-bottom: 1.8rem;
+  }
 }
 
 @media (min-width: 1100.98px) {
