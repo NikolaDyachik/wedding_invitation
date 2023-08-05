@@ -50,7 +50,12 @@ body {
 }
 
 .header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -63,7 +68,11 @@ body {
 }
 
 .header__title--white {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   text-transform: uppercase;
   width: 100%;
@@ -75,12 +84,22 @@ body {
 }
 
 .header__title--blue {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
   transform: translateY(-20px);
 }
 .header__photo-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-bottom: 2.6rem;
 }
@@ -118,11 +137,18 @@ body {
 }
 
 .wedding-date__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 .wedding-date__content {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
   order: 1;
   margin-bottom: 6rem;
 }
@@ -147,16 +173,26 @@ body {
   text-align: center;
   color: var(--color-primary);
   margin-bottom: 1.6rem;
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
   order: 2;
 }
 
 .wedding-date__photo-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-ordinal-group: 4;
+  -ms-flex-order: 3;
   order: 3;
 }
 
 .wedding-date__image {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 100%;
   flex: 1 1 100%;
   /* max-width: 60%; */
 }
@@ -174,7 +210,11 @@ body {
 }
 
 .wedding-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -198,9 +238,13 @@ body {
 }
 .wedding-time__ceremony {
   position: relative;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
 }
 .wedding-time__banquet {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
 }
 .wedding-time__ceremony::after {
@@ -215,19 +259,29 @@ body {
 }
 
 .wedding-info__photo-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-bottom: 2.4rem;
 }
 .wedding-info__image {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 100%;
   flex: 1 1 100%;
   border-radius: 0rem 10rem;
   /* max-width: 75%; */
 }
 
 .wedding-info__map-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 .wedding-info__map {
@@ -271,7 +325,11 @@ body {
 }
 
 .wedding-dresscode__colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .wedding-dresscode__color {
@@ -323,6 +381,8 @@ body {
 }
 .wedding-inspiration__photo-block,
 .wedding-story__photo-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 1.2rem;
 }
@@ -331,13 +391,22 @@ body {
 .wedding-story__left-group,
 .wedding-inspiration__right-group,
 .wedding-inspiration__left-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 50%;
   flex: 1 1 50%;
 }
 
 .wedding-chat__photo-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -454,8 +523,15 @@ body {
 .form__absent-inp + label,
 .form__wine-inp + label,
 .form__brandy-inp + label {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
   cursor: pointer;
   margin-bottom: 1.2rem;
@@ -469,7 +545,10 @@ body {
   display: inline-block;
   width: 2.4rem;
   height: 2.4rem;
+  -ms-flex-negative: 0;
   flex-shrink: 0;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
   flex-grow: 0;
   border: 1px solid #eaebee;
   border-radius: 0.6rem;
@@ -612,6 +691,8 @@ body {
     max-width: 75%;
   }
   .wedding-dresscode__colors {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   .wedding-dresscode__color:not(:last-child) {
@@ -632,12 +713,18 @@ body {
 
 @media (min-width: 767.98px) {
   .wedding-date__photo-block {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
     order: 3;
   }
   .wedding-date__title {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
     order: 1;
   }
   .wedding-date__content {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
     order: 2;
     margin-bottom: 2.4rem;
   }
@@ -723,17 +810,28 @@ body {
   }
   .wedding-info__addr {
     margin-top: 8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .wedding-info__place {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
     align-self: center;
   }
   .wedding-date__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
     margin-bottom: 0;
   }
   .wedding-date__desk {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
     align-self: center;
   }
   .wedding-date__text:not(:last-child) {
@@ -750,7 +848,11 @@ body {
     max-width: 40%;
   } */
   .wedding-info__trick {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-column-gap: 2rem;
+    -moz-column-gap: 2rem;
     column-gap: 2rem;
   }
   .wedding-info__image--full {
@@ -760,10 +862,16 @@ body {
     margin-bottom: 0;
   }
   .wedding-story__photo-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-column-gap: 2rem;
+    -moz-column-gap: 2rem;
     column-gap: 2rem;
   }
   .wedding-story__single-photos {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
     align-self: center;
   }
   .wedding-form__text {
@@ -813,14 +921,28 @@ body {
     display: none;
   }
   .header__wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-column-gap: 2.5rem;
+    -moz-column-gap: 2.5rem;
     column-gap: 2.5rem;
   }
   .header__text {
     width: 45rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   .header__image {
