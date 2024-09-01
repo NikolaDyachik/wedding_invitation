@@ -7,56 +7,209 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Красивий сайт</title>
+    <title>Our wedding day</title>
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="header__logo">03.09.2024</div>
-        <nav class="header__menu">
-          <div class="popup" id="popup">
-            <ul class="header__menu-list" id="menu">
-              <li class="header__menu-list-item">Розумна</li>
-              <li class="header__menu-list-item">Красива</li>
-              <li class="header__menu-list-item">Трудолюбива</li>
-              <li class="header__menu-list-item">Добра</li>
-              <li class="header__menu-list-item">Весела</li>
-            </ul>
+        <div class="header__container">
+          <div class="header__wrapper">
+            <div class="header__text">
+              <h1 class="header__title">
+                <span class="header__title--white"><span>Our</span> <span>day</span></span>
+                <p class="header__title--blue">wedding</p>
+              </h1>
+              <div class="header__subtitle header__subtitle--desk">
+                <h2 class="header__names">Vladyslav<span class="header__names--amp">&</span>Svitlana</h2>
+                <p class="header__subline">are getting married</p>
+              </div>
+            </div>
+            <picture class="header__photo-block">
+              <source srcset="./assets/images/hero-photo1.jpg" media="(max-width: 767.98px)" />
+              <source srcset="./assets/images/hero-photo2.jpg" media="(min-width: 767.99px)" />
+              <img class="header__image" src="./assets/images/hero-photo1.jpg" alt="Фотографія закоханих" />
+            </picture>
+            <div class="header__subtitle header__subtitle--mob">
+              <h2 class="header__names">Vladyslav<span class="header__names--amp">&</span>Svitlana</h2>
+              <p class="header__subline">are getting married</p>
+            </div>
           </div>
-          <div class="burger__icon">
-            <button type="button" class="burger__button" id="burger">
-              <div class="burger_line"></div>
-              <div class="burger_line"></div>
-              <div class="burger_line"></div>
-            </button>
-          </div>
-        </nav>
+        </div>
       </header>
-      <section class="main">
-        <p class="main_text main_text__container">
-          <span class="main_line">Ти мені симпатична і цікава як особистість. Хочу дізнатися про тебе більше, розспілкуватися.</span> У нас спільні інтереси, це круто що тебе
-          цікавить музика і ти її любиш, тобі подобається спорт, ти кайфуєш від природи та називаєш своє місто - селом) <span class="main_line">Любиш тваринок, свідомо надаєш перевагу українській мові,
-          хоч і вічлива але не соромишся сказати матюк) Ти не скупа і є дуже правильною, відповідальною людиною)</span> </span><span class="main_line">Пропоную знайти час та сходити кудись =))</span>
-        </p>
-        <p class="pozitive_text pozitive_text__container">
-          <span class="main_line">Радий, що твоя відповідь позитивна!</span>
-Обіцяю, що час буде провередий цікаво, інтерактивно і надіюсь незабутньо!)
-        </p>
+      <section class="wedding-date">
+        <div class="wedding-date__container wedding-date__wrapper">
+          <div class="wedding-date__content">
+            <div class="wedding-date__desk">
+              <p class="wedding-date__text text wedding-date__text--ls">Дорогі наші рідні та друзі, ми будемо раді розділити з вами один з найважливіших днів у нашому житті!</p>
+              <p class="wedding-date__text text wedding-date__text--fw">Запрошуємо вас на урочисту подію з нагоди нашого одруження.</p>
+              <p class="wedding-date__text text">Ваша присутність та гарний настрій будуть безцінними для нас у цей день!</p>
+            </div>
+            <img class="wedding-date__image wedding-date__image-desktop hidden" src="assets/images/calendar_big.jpg" alt="Дата весілля" />
+          </div>
 
+          <h2 class="wedding-date__title">24.09.2023</h2>
+          <picture class="wedding-date__photo-block shown">
+            <source srcset="assets/images/calendar.png" media="(max-width: 767.98px)" />
+            <source srcset="assets/images/calendar_big.jpg" media="(min-width: 767.99px)" />
+            <img class="wedding-date__image" src="assets/images/calendar.png" alt="Дата весілля" />
+          </picture>
+        </div>
       </section>
-<section class="quiz">
-  <div class="quiz__inner quiz__container">
-    <h2 class="quiz__inner__title title">Важливо</h2>
-    <p class="quiz__inner__note text">*Яка б не була твоя відповідь, від себе обіцяю що класні відносини між нами залишаться</p>
-  </div>
-  <div class="quiz-form__form">
-  <iframe class="quiz__iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSfmTlolULYOk3GsZeZKWokHevVTXkSxtFP2I31oM1z4y01nAw/viewform?embedded=true" width="100%" overflow-x:"hidden" height="600px" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
-</div>
-</section>
-<section class="footer">
-  <button class="footer__button">З повагою Дячук М.І.</button>
-</section>
+      <section class="wedding-info">
+        <div class="wedding-info__container">
+          <h2 class="wedding-info__title title">Wedding information</h2>
+          <div class="wedding-info__time wedding-time">
+            <div class="wedding-time__ceremony">
+              <p class="wedding-time__name">Шлюбна церемонія</p>
+              <p class="wedding-time__time">14:00</p>
+            </div>
+            <div class="wedding-time__banquet">
+              <p class="wedding-time__name">Святковий банкет</p>
+              <p class="wedding-time__time">15:00</p>
+            </div>
+          </div>
+          <div class="wedding-info__trick">
+            <img class="wedding-info__image hidden" src="./assets/images/place2_big.jpg" alt="Місце весілля" />
+            <picture class="wedding-info__photo-block">
+              <source srcset="./assets/images/place.jpg" media="(max-width: 500.98px)" />
+              <source srcset="./assets/images/place_big.jpg" media="(min-width: 500.99px)" />
+              <img class="wedding-info__image wedding-info__image--full" src="./assets/images/place.jpg" alt="Місце весілля" />
+            </picture>
+          </div>
+          <div class="wedding-info__addr">
+            <div class="wedding-info__place">
+              <p class="wedding-info__city">м. Бровари</p>
+              <p class="wedding-info__address">Ресторан "Петровський&nbsp;Броварвул" вул. Переяславський шлях, 131</p>
+            </div>
+            <div class="wedding-info__map-wrapper">
+              <iframe
+                class="wedding-info__map"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d317.33900540233293!2d30.795196036387164!3d50.48370426732542!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4dbe79311c7ff%3A0x3406aeba176f1cf6!2sHotel%20Complex%20Petrovsky%20Brovar!5e0!3m2!1sru!2sua!4v1690015842759!5m2!1sru!2sua"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="wedding-dresscode">
+        <div class="wedding-dresscode__container">
+          <h2 class="wedding-dresscode__title title">Dress code</h2>
+          <p class="wedding-dresscode__text text">Будемо раді, якщо підтримаєте кольорову гаму нашого весілля</p>
+          <div class="wedding-dresscode__colors">
+            <div class="wedding-dresscode__color wedding-dresscode__color--1"></div>
+            <div class="wedding-dresscode__color wedding-dresscode__color--2"></div>
+            <div class="wedding-dresscode__color wedding-dresscode__color--3"></div>
+            <div class="wedding-dresscode__color wedding-dresscode__color--4"></div>
+            <div class="wedding-dresscode__color wedding-dresscode__color--5"></div>
+            <div class="wedding-dresscode__color wedding-dresscode__color--6"></div>
+          </div>
+          <p class="wedding-dresscode__text text appear">
+            Однак якщо у вас немає можливості притримуватись даного стилю-не хвилюйтеся! Ми будемо раді вашій присутності у будь-якому випадку!
+          </p>
+        </div>
+      </section>
+      <section class="wedding-inspiration none-pc">
+        <div class="wedding-inspiration__container">
+          <h2 class="wedding-inspiration__title title">Inspiration</h2>
+          <div class="wedding-inspiration__photo-block">
+            <div class="wedding-inspiration__left-group">
+              <img class="wedding-inspiration__image wedding-story__image--tl" src="./assets/images/insp1.jpg" alt="Весільне фото" />
+              <img class="wedding-inspiration__image" src="./assets/images/insp2.jpg" alt="Весільне фото" />
+            </div>
+            <div class="wedding-inspiration__right-group">
+              <img class="wedding-inspiration__image wedding-story__image--tr" src="./assets/images/insp3.jpg" alt="Весільне фото" />
+              <img class="wedding-inspiration__image" src="./assets/images/insp4.jpg" alt="Весільне фото" />
+              <img class="wedding-inspiration__image wedding-story__image--br" src="./assets/images/insp5.jpg" alt="Весільне фото" />
+            </div>
+          </div>
+          <p class="wedding-inspiration__text text">Якщо у вас немає можливості притримуватись даного стилю-не хвилюйтеся, ми будемо раді вам у будь-якому випадку!</p>
+        </div>
+      </section>
+      <section class="wedding-story">
+        <div class="wedding-story__container">
+          <h2 class="wedding-story__title title">Love story</h2>
+          <div class="wedding-story__photo-wrapper">
+            <div class="wedding-story__photo-block">
+              <div class="wedding-story__left-group">
+                <img class="wedding-story__image" src="./assets/images/story1_big.jpg" alt="Весільне фото" />
+                <img class="wedding-story__image" src="./assets/images/story2_big.jpg" alt="Весільне фото" />
+                <img class="wedding-story__image wedding-story__image--bl" src="./assets/images/story3_big.jpg" alt="Весільне фото" />
+              </div>
+              <div class="wedding-story__right-group">
+                <img class="wedding-story__image wedding-story__image--tr" src="./assets/images/story4_big.jpg" alt="Весільне фото" />
+                <img class="wedding-story__image" src="./assets/images/story5_big.jpg" alt="Весільне фото" />
+              </div>
+            </div>
+            <div class="wedding-story__single-photos">
+              <img class="wedding-story__image wedding-story__image--tl" src="./assets/images/ceremony1_big.jpg" alt="Весільне фото" />
+              <img class="wedding-story__image wedding-story__image--br" src="./assets/images/ceremony2_big.jpg" alt="Весільне фото" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="wedding-flowers">
+        <div class="wedding-flowers__container">
+          <h2 class="wedding-flowers__title title">Flowers</h2>
+          <p class="wedding-flowers__text text">
+            Ми не засмутимось, якщо Ви не подаруєте нам квіти. Гідною альтернативою буде пляшка Вашого улюбленого напою, яким ми будемо насолоджуватись сімейними вечорами
+          </p>
+        </div>
+      </section>
+      <section class="wedding-chat">
+        <div class="wedding-chat__container">
+          <h2 class="wedding-chat__title title">Chat communication</h2>
+          <p class="wedding-chat__text text">Приєднуйтесь до нашої телеграм групи, де Ви зможете спілкуватись з гостями свята, отримувати та скидати фото</p>
+          <a class="wedding-chat__link" href="https://t.me/+X0-EbvBnydNlYzNi">https://t.me/+X0-EbvBnydNlYzNi</a>
+          <div class="wedding-chat__photo-block">
+            <img class="wedding-chat__image" src="./assets/images/chat-link.jpg" alt="Посилання на телеграм" />
+          </div>
+        </div>
+      </section>
+      <section class="wedding-form">
+        <div class="wedding-form__container">
+          <h2 class="wedding-form__title title">Important</h2>
+          <p class="wedding-form__text">Будь ласка, підтвердіть Вашу присутність та дайте відповільна запитання аби допомогти нам в організації</p>
+          <p class="wedding-form__note text">*Просимо заповнювати форму кожному гостю окремо</p>
+          <div class="wedding-form__form">
+            <iframe
+              class="form__iframe"
+              src="https://docs.google.com/forms/d/e/1FAIpQLSe30oHmTelXVRgT73G5yZqP0YoPhKJT8HlhoE2vYPog_11Xpg/viewform?embedded=true"
+              width="100%"
+              height="1250"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+              scrolling="no"
+              >Завантаження…</iframe
+            >
+          </div>
+        </div>
+      </section>
+      <section class="wedding-celebrate">
+        <div class="wedding-celebrate__container">
+          <h2 class="wedding-celebrate__title title">Celebrate with&nbsp;us!</h2>
+        </div>
+      </section>
+      <!-- <section class="wedding-desktop">
+        <div class="wedding-desktop__container">
+          <div class="wedding-desktop__wrapper">
+            <div class="wedding-desktop__content">
+              <p class="wedding-desktop__couple">Vladyslav<span class="header__subtitle--amp">&</span>Svitlana</p>
+              <h2 class="wedding-desktop__title">Запрошення на&nbsp;весілля</h2>
+              <p class="wedding-desktop__message">
+                Дорогі наші рідні та друзі, аби переглянути запрошення - просимо відкрити його через
+                <span class="wedding-desktop__message--bold">мобільний застосунок</span>
+              </p>
+            </div>
+            <div class="wedding-desktop__photo-block">
+              <img class="wedding-desktop__image" src="./assets/images/dekstop-main.png" alt="Фотографія закоханих" />
+            </div>
+          </div>
+        </div>
+      </section> -->
     </div>
-    <script src="./js/script.js"></script>
   </body>
 </html>
